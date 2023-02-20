@@ -9,30 +9,39 @@
 </head>
 <body>
 
-    <nav class="sticky top-0 z-50 bg-[#27272a]"> 
+    <nav class="fixed top-0 z-50 w-full bg-[#27272a]"> 
         <div class="relative  bg-[#27272a]">
-            <ul class="flex flex-row items-center justify-start p-[13px] ml-[85px]  text-gray-500 ">
-               <a href="./assets/icons8-visual-studio.svg"></a>
-                <li class="text-lg font-medium text-white">Visual Studio Code</li>
-                <li class="ml-[30px] hover:text-white">Docs</li>
-                <li class="ml-[30px] hover:text-white" >Updates</li>
-                <li class="ml-[30px] hover:text-white" >Blog</li>
-                <li class="ml-[30px] hover:text-white" >API</li>
-                <li class="ml-[30px] hover:text-white" >Extensions</li>
-                <li class="ml-[30px] hover:text-white">FAQ</li>
-                <li class="ml-[30px] hover:text-white">Learn</li>
-            </ul>
+            <ul class="flex flex-row items-center justify-start  ml-[65px]">
+                <img class="h-[2rem]" src="./assets/icons8-visual-studio-48.png" alt="">
+                <li class="text-lg font-medium text-white ml-[5px]">Visual Studio Code</li>
+                <li class="ml-[20px] hover:text-white text-gray-500">Docs</li>
+                <li class="ml-[20px] hover:text-white text-gray-500" >Updates</li>
+                <li class="ml-[20px] hover:text-white text-gray-500" >Blog</li>
+                <li class="ml-[20px] hover:text-white text-gray-500" >API</li>
+                <li class="ml-[20px] hover:text-white text-gray-500" >Extensions</li>
+                <li class="ml-[20px] hover:text-white text-gray-500">FAQ</li>
+                <li class="ml-[20px] hover:text-white text-gray-500">Learn</li>
+                <div class="relative pl-40 ml-[40px]">
+                    <div class="absolute inset-y-0  flex items-center ml-[10px]  pointer-events-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <input type="text" class="bg-gray-700 block w-40 pl-10 p-[16px] placeholder-white  text-sm" placeholder="Search Docs">
+                </div>
+                <button class="bg-blue-600 pt-[16px] pb-[14px] relative pl-4"  ><img class="h-5" src="./assets/chevron-bar-down.svg" alt=""></button>
+                <button class="bg-blue-600 text-white relative p-[13px] pr-[30px]">Download</button>
+                <!-- <img class="absolute  ml-[850px]" src="./assets/search.png" alt="search">
+                <input class="ml-[150px] placeholder-white bg-gray-600 p-[12px]" type="text" placeholder="Search Docs"> -->
+            </ul>           
         </div>
     </nav>
 
     <main>
-        <div class="bg-gray-800 text-white">
-            <p class="flex items-center justify-center ml-[25px] p-[12px]"> <strong class="text-blue-500 pr-[10px]">Version 1.75</strong>  is now available! Read about the new features and fixes from January.</p>
-
+        <div class="bg-gray-800 text-white flex items-center justify-center">
+            <p class="mt-[40px] ml-[25px] p-[12px]"> <strong class="text-blue-500 pr-[10px]">Version 1.75</strong>  is now available! Read about the new features and fixes from January.</p>
         </div>
         <div class="bg-[#27272a] flex h-[34rem] relative">
         <div class="font-normal ml-[120px] mt-[55px]">
-           <p class="text-5xl mt-[10px] text-white ml-[40px]">Code editing.</p>
+           <p class="text-5xl mt-[10px] text-white ml-[60px] font-thin">Code editing.</p>
            <p class="text-white  text-5xl ml-[25px] ml-[75px]">Redefined.</p>
             <p class="text-lg text-gray-400">Free. Built on open source. Runs everywhere.</p>
             <button class="mt-[80px] pl-[20px] pr-[20px] pt-[6px] pb-[10px] mt-[60px] bg-blue-500 text-white font-bold ml-[55px]">Download Mac Universal <br> <p class="text-sm font-normal">stable build</p></button>
@@ -63,7 +72,7 @@
             </div>
 
             <div class=" pl-[4rem] h-[7rem] pr-[4rem] pt-[2rem] pb-[2rem] hover:bg-gray-300">
-                <img class="ml-[30px] hover:bg-red-500" src="./assets/icons8-bug-32.png" alt="debug">
+                <img class="ml-[30px] hover:bg-red-500 " src="./assets/icons8-bug-32.png" alt="debug">
                 <p>Run and Debug</p>
             </div>
 

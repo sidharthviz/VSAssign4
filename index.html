@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Visual Studio Code</title>
 </head>
-<body>
+<body class="bg-white">
 
     <nav class="fixed top-0 z-50 w-full bg-[#27272a]"> 
         <div class="relative  bg-[#27272a]">
@@ -39,7 +39,7 @@
         <div class="bg-gray-800 text-white flex items-center justify-center">
             <p class="mt-[40px] ml-[25px] p-[12px]"> <strong class="text-blue-500 pr-[10px]">Version 1.75</strong>  is now available! Read about the new features and fixes from January.</p>
         </div>
-        <div class="bg-[#27272a] flex h-[34rem] relative">
+        <div class="bg-[#27272a] flex h-[34rem]">
         <div class="font-normal ml-[120px] mt-[55px]">
            <p class="text-5xl mt-[10px] text-white ml-[60px] font-thin">Code editing.</p>
            <p class="text-white  text-5xl ml-[25px] ml-[75px]">Redefined.</p>
@@ -57,14 +57,14 @@
         </div>
 
         <div class="flex items-center ml-[50px] ">
-            <img class="object-fill h-96 " src="./assets/vscode.png" alt="">
+            <img class=" h-96 " src="./assets/vscode.png" alt="">
         </div>
         </div>
 
 
     <!-- Debug Section -->
 
-        <div class="flex flex-row justify-evenly h-[5rem]">
+        <div class="flex flex-row justify-evenly">
 
             <div class=" pl-[4rem] h-[7rem] pr-[4rem] pt-[2rem] pb-[3rem] hover:bg-gray-300">
                 <img class="ml-[20px] hover:bg-blue-900" src="./assets/idea.png" alt="idea">
@@ -81,7 +81,7 @@
                 <p>Built-in Git</p>
             </div>
 
-            <div class=" pl-[4rem] h-[7rem] pr-[4rem] pt-[2rem] pb-[5rem] hover:bg-gray-300">
+            <div class=" pl-[4rem] h-[7rem] pr-[4rem] pt-[2rem] pb-[3rem] hover:bg-gray-300">
                 <img class="ml-[20px] hover:bg-yellow-500" src="./assets/extentions.png" alt="extentions">
                 <p>Extentions</p>
             </div>
@@ -91,36 +91,81 @@
 
         <!-- People's Section -->
 
-        <div class="flex flex-row font-normal bg-gray-100 pt-[4rem] mt-[2rem] pb-[4rem]"> 
-            <div class="ml-40 relative">
-                <img class="h-[4rem] cursor-pointer absolute right-[17rem] rounded-[80px]" src="./assets/Una.jpeg" alt="">
+        <div class="grid grid-col-1 lg:grid-cols-3 gap-2 lg:gap-4 py-10 px-20 gap-40 bg-slate-100 pb-20">
+            <div class="ml-20 relative w-[250px]">
+                <!-- una -->
+                <div class=" relative top-[5rem] right-[90px]">
+                    <img class="h-20 rounded-[80px]" src="./assets/Una.jpeg" alt="just a random girl">
+                </div>
+                <div>
+                    <p>
+                       <small class="font-bold"> Una Kravets </small> <small>@Una</small>  <br>
+                        VS @code does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️
+                    </p>
+                </div>
+            </div>
+
+                <!-- jad -->
+                <div class="ml-20 w-[250px]">
+                    <div class="relative top-[5rem] right-[90px]">
+                        <img class="h-20 rounded-[80px]" src="./assets/jadbox.jpeg" alt="just random guy">
+                    </div>
+                    <div>
+                        <p>
+                          <small class="font-bold"> Jonathan Dunlap </small> <small>@jadbox</small>  <br>
+                            VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥
+                        </p>
+                    </div>
+                </div>
+               
+
+                <!-- kodoma -->
+
+                <div class="ml-20" >
+                    <div class="relative top-[5rem] right-[90px]">
+                        <img class="h-20 rounded-[80px]" src="./assets/PKodmad.jpeg" alt="just a another random girl">
+                    </div>
+                    <div>
+                        <p>
+                            <small class="font-bold">Pavithra Kodmad</small> <small> @PKodmad </small> <br>
+                            VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!
+                          </p>
+                    </div>
+                </div>
+        </div>
+
+        <!-- <div class="grid grid-cols-3 font-normal bg-gray-100 pt-[4rem] mt-[1px] pb-[4rem]"> 
+            <div class="ml-32 ">
+                <img class="h-[4rem] cursor-pointer right-[17rem] rounded-[80px]" src="./assets/Una.jpeg" alt="">
                 <p class=" ml-10 w-64 ">
                   <small class="font-bold"> Una Kravets</small> <small>@Una</small><br>
                    VS @code does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️
                </p>
             </div>
-            <div class="ml-20 relative">
-                <img class="h-[4rem] cursor-pointer right-[17rem] absolute rounded-[80px]" src="./assets/jadbox.jpeg" alt="">
-                <p class="ml-10 w-64"> <small class="font-bold">Jonathan Dunlap </small> <small>@jadbox</small>  <br>
+            <div class="ml-20 ">
+                <img class="h-[4rem] cursor-pointer  rounded-[80px]" src="./assets/jadbox.jpeg" alt="">
+                <p class="ml-10 w-64"> <small class="font-bold">
+                    Jonathan Dunlap </small> <small>@jadbox</small>  <br>
                     VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥
                 </p>
         
-                <img src="" alt="">
-                <p>
             </div>
-            <div class="ml-[120px] relative">
-                <img class="h-[4rem] cursor-pointer absolute right-[17rem] rounded-[80px]" src="./assets/PKodmad.jpeg" alt="">
+            <div class="ml-[120px] ">
+                <img class="h-[4rem] cursor-pointer relative rounded-[80px]" src="./assets/PKodmad.jpeg" alt="">
                 <p class="w-64 ">
                 <small class="font-bold">Pavithra Kodmad</small> <small> @PKodmad </small> <br>
                 VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!
               </p>
       
             </div>
-        </div>
+        </div> -->
 
         <!-- Sections  -->
 
-        <section>
+
+
+        <section class="">
+            <div>
             <div class="flex items-center">
                  <img src="./assets/home-intellisense.svg" alt="">
                   <p> 
@@ -172,6 +217,7 @@
                     
                 </p>
             </div>
+        </div>
         </section>
         
 

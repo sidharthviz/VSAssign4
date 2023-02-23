@@ -9,7 +9,7 @@
 </head>
 <body class="bg-white">
 
-    <nav class="fixed top-0 z-50 w-full bg-[#27272a]"> 
+    <nav class="fixed top-0 z-50 w-full bg-[#27272a] overflow-hidden"> 
         <div class="relative  bg-[#27272a]">
             <ul class="flex flex-row items-center justify-start  ml-[65px]">
                 <img class="h-[2rem]" src="./assets/icons8-visual-studio-48.png" alt="">
@@ -339,42 +339,46 @@
 
 
       <div class="grid grid-cols-1 lg:grid-cols-3 ml-40">
-        <div class="py-20 ">
+        <div class="py-10">
             <div>
-                <img class="w-[80px]" src="./assets/windows-logo.png" alt="">
+                <img class="h-32" src="./assets/windows-logo.png" alt="">
             </div>
-            <div>
-                <button class="bg-blue-600">Windows <br> <small>Windows 8, 10 ,11</small></button>
+            <div class="py-10">
+                <button class="bg-blue-600 hover:bg-blue-900 text-white font-medium text-sm py-7 px-6 rounded inline-flex items-center"> 
+                    <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                    <span>Windows 8, 10 ,11</span>
+                  </button>
+                
             </div>
-            <div>
-                <table>
+            <div class="">
+                <table class="">
                     <tbody>
                         <tr>
                             <td>User Installer</td>
-                            <td><button><small> x64</small></button></td>
-                            <td><button><small>x86</small></button></td>
-                            <td><button><small>Arm64</small></button></td>
+                            <td><button class="bg-blue-600 rounded-sm text-white font-medium" ><small> x64</small></button></td>
+                            <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>x86</small></button></td>
+                            <td><button class="bg-blue-600 rounded-sm text-white font-medium" ><small>Arm64</small></button></td>
                         </tr>
 
                         <tr>
                             <td>System Installer</td>
-                            <td><button><small> x64</small></button></td>
-                            <td><button><small>x86</small></button></td>
-                            <td><button><small>Arm64</small></button></td>
+                            <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small> x64</small></button></td>
+                            <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>x86</small></button></td>
+                            <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>Arm64</small></button></td>
                         </tr>
 
                         <tr>
                             <td>.Zip</td>
-                            <td><button><small> x64</small></button></td>
-                            <td><button><small>x86</small></button></td>
-                            <td><button><small>Arm64</small></button></td>
+                            <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small> x64</small></button></td>
+                            <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>x86</small></button></td>
+                            <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>Arm64</small></button></td>
                         </tr>
 
                         <tr>
                             <td>CLI</td>
-                            <td><button><small> x64</small></button></td>
-                            <td><button><small>x86</small></button></td>
-                            <td><button><small>Arm64</small></button></td>
+                            <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small> x64</small></button></td>
+                            <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>x86</small></button></td>
+                            <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>Arm64</small></button></td>
                         </tr>
                     </tbody>
                 </table>
@@ -383,47 +387,56 @@
             
             <div class="py-20">
                 <div>
-                    <img class="w-[80px]" src="./assets/linux-logo.png" alt="">
+                    <img class="h-32" src="./assets/linux-logo.png" alt="">
                 </div>
-                <div>
-                    <button class="bg-blue-600">.Deb <br> <small>Debian, Ubuntu</small></button>
-                    <button class="bg-blue-600">.rpm <br> <small>Red Hat, Fedora, SUSE</small></button>
+                <div class="right-20 relative">
+                    <button class="bg-blue-600 hover:bg-blue-900 text-white font-medium text-sm py-4 px-6 rounded inline-flex items-center"> 
+                        <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                        <span>.Deb <br> <small>Debian, Ubuntu</small></span>
+                      </button>
+                    
+                      <button class="bg-blue-600 hover:bg-blue-900 text-white font-medium text-sm py-4 px-6 rounded inline-flex items-center"> 
+                        <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                        <span>.rpm <br> <small>Red Hat, Fedora, SUSE</small></span>
+                      </button>
+                    
                 </div>
                 
-                <div>
+                <div class="py-10">
                     <table>
                         <tbody>
                             <tr>
                                 <td>.deb</td>
-                                <td><button> <small> x64</small></button></td>
-                                <td><button><small>Arms32</small></button></td>
-                                <td><button><small>Arm64</small></button></td>
+                                <td><button class="bg-blue-600 rounded-sm text-white font-medium"> <small> x64</small></button></td>
+                                <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>Arms32</small></button></td>
+                                <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>Arm64</small></button></td>
                             </tr>
     
                             <tr>
                                 <td>.rpm</td>
-                                <td><button> <small> x64</small></button></td>
-                                <td><button><small>Arms32</small></button></td>
-                                <td><button><small>Arm64</small></button></td>
+                                <td><button class="bg-blue-600 rounded-sm text-white font-medium"> <small> x64</small></button></td>
+                                <td><button class="bg-blue-600 rounded-sm text-white font-medium"> <small>Arms32</small></button></td>
+                                <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>Arm64</small></button></td>
                             </tr>
     
                             <tr>
                                 <td>.tar.gz</td>
-                                <td><button> <small> x64</small></button></td>
-                                <td><button><small>Arms32</small></button></td>
-                                <td><button><small>Arm64</small></button></td>
+                                <td><button class="bg-blue-600 rounded-sm text-white font-medium"> <small> x64</small></button></td>
+                                <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>Arms32</small></button></td>
+                                <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>Arm64</small></button></td>
                             </tr>
 
                             <tr>
                                 <td>Snap</td>
-                                <td><button>snapStore</button></td>
+                                <td><button class="bg-blue-600 rounded-sm text-white font-medium">
+                                    <small>snapStore</small></button></td>
                             </tr>
     
                             <tr>
                                 <td>CLI</td>
-                                <td><button> <small> x64</small></button></td>
-                                <td><button><small>Arms32</small></button></td>
-                                <td><button><small>Arm64</small></button></td>
+                                <td><button class="bg-blue-600 rounded-sm text-white font-medium"> <small> x64</small></button></td>
+                                <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>Arms32</small></button></td>
+                                <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>Arm64</small></button></td>
                             </tr>
                         </tbody>
                     </table>
@@ -432,26 +445,31 @@
 
                 <div class="py-20">
                     <div>
-                        <img class="w-[80px]" src="./assets/apple-logo.svg" alt="">
+                        <img class="h-20" src="./assets/apple-logo.svg" alt="">
                     </div>
-                    <div>
-                        <button class="bg-blue-600">Mac<br> <small>macOS 10.11+</small></button>
+                    <div class="ml-10 relative right-10 mt-10">
+
+                        <button class="bg-blue-600 hover:bg-blue-900 text-white font-medium text-sm py-4 px-6 rounded inline-flex items-center"> 
+                            <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                            <span>Mac<br> <small>macOS 10.11+</small></span>
+                          </button>
                     </div>
 
-                    <div>
+                    <div class="py-10">
                         <table>
                             <tbody>
                                 <tr>
                                     <td>.Zip</td>
-                                    <td><button><small>Intel Chip</small></button></td>
-                                    <td><small>Apple silicon</small></td>
-                                    <td><small>Universal</small></td>
+                                    <td><button  class="bg-blue-600 rounded-sm text-white font-medium"><small>Intel Chip</small></button></td>
+                                    <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>Apple silicon</small></button></td>
+                                    <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>Universal</small></button></td>
+                                    
                                 </tr>
 
                                 <tr>
                                     <td>CLI</td>
-                                    <td><button><small>Intel Chip</small></button></td>
-                                    <td><small>Apple silicon</small></td>
+                                    <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>Intel Chip</small></button></td>
+                                    <td><button class="bg-blue-600 rounded-sm text-white font-medium"><small>Apple silicon</small></button></td>
                                 </tr>
 
                             </tbody>
@@ -459,6 +477,65 @@
                     </div>
                 </div>
             </div>
+
+
+            <section class="bg-slate-100">
+                <div class="flex flex-row justify-evenly py-10 px-10">
+                    <div class="">
+                        <div>
+                          <h1 class="font-bold text-[22px] text-gray-700">Want new features sooner?</h1>
+                           <h2>Get the <a class="text-blue-500 hover:underline" href=""> Insiders build </a>instead.</h2>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <div>
+                            <h1 class="font-bold text-[22px] text-gray-700">Use <a class="text-blue-500 hover:underline" href=""> vscode.dev</a> for quick edits online</h1>
+                            <h2>GitHub, Azure Repos, and local files.</h2>
+                        </div>
+                    </div>   
+                </div>
+
+
+                <div class="flex flex-row justify-center ml-20 py-20">
+                    <div class="w-[800px]">
+                        <h1 class="ml-[250px] text-sm"><small>LICENSE AND PRIVACY TERMS</small>  </h1>
+                        <br>
+
+                        <h3 class="items-center tracking-wide font-light leading-10 text-sm text-gray-500">
+                            By downloading and using Visual Studio Code, you agree to the <a class="text-blue-500 hover:underline" href="">license term</a> and <a class="text-blue-500 hover:underline" href="">privacy statement.</a>  VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see <a class="text-blue-500 hover:underline" href="">How to Disable Crash Reporting</a> to learn how to disable it.
+                            
+                        </h3>
+                    </div>
+                   </div>
+    
+            </section>
+
+            <footer class="bg-[#3f3f46]">
+                <div class="py-9 px-20 text-white font-medium text-sm flex flex-row justify-between">
+                    <div>
+                        <ul class="flex flex-row">
+                            <li>Hello from Seattle</li>
+                            <li class="ml-5 hover:text-[#8b5cf6]">follow @code</li>
+                            <img  class="ml-3" alt="GitHub User's stars" src="https://img.shields.io/github/stars/chris48s?affiliations=COLLABORATOR&style=social">
+                        </ul>
+                        
+                    </div>
+                   
+                    
+                    <div>
+                        <div>
+                            <ul  class="flex flex-row gap-4">
+                                <li class="hover:text-[#8b5cf6]">Support</li>
+                                <li class="hover:text-[#8b5cf6]">Privacy</li>
+                                <li class="hover:text-[#8b5cf6]">Terms of Use</li>
+                                <li class="hover:text-[#8b5cf6]">License</li>
+                                <img class="h-5" src="./assets/microsoft-logo.png" alt="">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
      
 
 
